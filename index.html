@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo List Project</title>    
+  <script defer src="main.js"></script></head>
+  <body>
+    
+    <div class="sidebar">
+      <div class="sidebar-head">
+        <div class="todo-title">ToDo</div>
+      </div>
+
+      <div class="sidebar-task-container">
+        <div class="add-task-container">
+          <div class="task-name">Tasks</div>
+        </div>
+
+        <div class="sidebar-today-container">
+          <img src="5407a09e9656e2a805c9.svg">
+          <div class="sidebar-today">Today</div>
+        </div>
+        <div class="today-event-container">
+        </div>
+
+        <div class="sidebar-upcoming-container">
+          <img src="cadef93c17e41b2262f1.svg">
+          <div>Upcoming</div>
+        </div>
+        <div class="upcoming-event-container">
+        </div>
+      </div>
+
+      <div class="sidebar-completed-container">
+        <img src="f7d3961590133019516c.svg">
+        <div>Completed Tasks</div>
+      </div>
+    </div>
+
+    <div class="no-task-text">No Tasks</div>
+
+    <main id="content">
+      <div class="content-container">
+        <h1 class="today-header">Completed</h1>
+
+        <div class="task-container">
+          <div class="task-list">
+            <div class="checkbox-container">
+              <div class="task">
+                <div class="task-title">Kono Dio Da</div>
+                <div class="task-due">
+                  <div>12:30pm</div>
+                </div>
+              </div>
+            </div>
+            <div class="delete-icon-container">
+              <img class="delete-icon" src="66d3958d6b48a544d1be.svg">
+            </div>
+            <div class="priority-check"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <dialog class="todo-dialog">
+      <h3 class="dialog-header">Add a Task</h3>
+      <form class="todo-form" method="dialog">
+        <div>
+          <label for="task_name">Title: </label>
+          <input placeholder="e.g Touch Grass" class="title-input" type="text" id="task_name" required>
+        </div>
+        <div>
+          <label for="time">Time: </label>
+          <input class="task-time" id="time" type="time" required>
+        </div>
+        <div>
+          <label for="priority-dropdown">Priority: </label>
+          <select class="priority-dropdown" name="priority" id="priority-dropdown">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="cancel-btn">Cancel</button>
+          <button type="submit" >Add Task</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="upcoming-dialog">
+      <h3 class="upcoming-header">Add an Upcoming Task</h3>
+      <form class="upcoming-form" method="dialog">
+        <div>
+          <label for="task-name">Title: </label>
+          <input placeholder="e.g Go Shopping" class="upcoming-title-input" type="text" id="task_name" required>
+        </div>
+        <div>
+          <label for="upcoming_time">Time: </label>
+          <input class="upcoming-task-time" type="time" id="upcoming_time" required>
+          <label for="upcoming_date">Date: </label>
+          <input class="upcoming-task-duedate" type="date" id="upcoming_date" required>
+        </div>
+        <div>
+          <label for="upcoming-priority-dropdown">Priority: </label>
+          <select class="upcoming-priority-dropdown" name="priority" id="upcoming-priority-dropdown">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <div class="upcoming-btn-container">
+          <button type="button" class="upcoming-cancel-btn">Cancel</button>
+          <button type="submit" >Add Task</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
